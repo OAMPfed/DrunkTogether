@@ -178,6 +178,12 @@ var jsonContent = {
     }
 
 function pullCard(){
+    //This function will delete the previous card so the space is filled with a new card if the function is called more than once.
+    let deleteCard = document.getElementById("pulledCard");
+    while (deleteCard.firstChild) {
+    deleteCard.removeChild(deleteCard.firstChild);
+    }
+    
     //This function pulls a random id from jsonContent. Credit to Vicky Gonsalves of StackOverflow.
     let random = jsonContent.cards[Math.floor(Math.random() * jsonContent.cards.length)];
     console.log(random);
