@@ -1,0 +1,22 @@
+{
+  "name": "drunktogether",
+  "version": "1.0.0",
+  "description": "Drunk Together! The free, always-available card based social drinking game!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "todo"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "Ole Alexander Moa Pettersen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}
