@@ -3,47 +3,139 @@
     padding: 0px;
 }
 body {
-    background-image: linear-gradient(to bottom right, red, blue, green, gray);
+    background-image: linear-gradient(-215deg, #34495e, #2d3436);
     min-height: 100vh;
     height: 100%;
 }
 
 .wrapper {
     display: grid;
-    grid-template-columns: 33% 34% 33%;
+    grid-template-columns: auto;
     grid-template-rows: auto;
+    grid-row-gap: 20px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+    grid-column: 1/4;
+    grid-row: 1;
+}
+.header-links a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0px 25px 0px 0px;
+}
+.header-links a:hover{
+    text-decoration: underline;
+}
+.header-links a:last-child{
+    padding: 0px 40px 0px 0px;
 }
 .wrapper h1{
     margin: 0px auto 0px auto;
     color: white;
-    grid-column: 1/4;
-    grid-row: 1;
+    font-size: 70px;
 }
 .wrapper p{
     margin: 0px auto 0px auto;
     color: white;
-    grid-column: 1/4;
+    font-size: 20px;
+}
+#cardButton{
+    width: 200px;
+    height: 50px;
+    margin: 40px auto 0px auto;
+    font-size: 20px;
+}
+
+/***********************/
+/* TEXT STYLING START */
+/*********************/
+
+.drunk-text{
+    grid-column: 2/4;
     grid-row: 2;
 }
-.wrapper button{
-    width: 100px;
-    height: 20px;
-    margin: 0px auto 0px auto;
-    grid-column: 1/4;
+
+/*********************/
+/* TEXT STYLING END */
+/*******************/
+
+/************************/
+/* INPUT STYLING START */
+/**********************/
+.people{
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+.name-input input{
+    width: 200px;
+    height: 46px;
+    font-size: 20px;
+    background-color: white;
+}
+.name-input button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: white;
+    border: solid 1px white;
+}
+.name-list ul{
+    width: 408px;
+    height: auto;
+    background-color: red;
+}
+.name-list ul li p{
+    font-size: 35px;
+    text-align: center;
+}
+
+/**********************/
+/* INPUT STYLING END */
+/********************/
+
+/***********************/
+/* CARD STYLING START */
+/*********************/
+.card-area{
+    grid-column: 2/4;
     grid-row: 3;
 }
-
-#pulledCard{
+.pulledCardBorder{
+    width: 340px;
+    padding: 20px;
     grid-column: 1/4;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 10px;
+    background-color: #2d3436;
+}
+#pulledCard{
+    display: flex;
+    grid-column: 1/4;
+    border-radius: 10px;
+    width: 340px;
+    height: 510px;
+    background-color:#34495e;
 }
 #pulledCard h2{
-    color: white;
-    width: 250px;
+    color: salmon;
+    width: 100%;
+    font-size: 20px;
 }
-
 #pulledCard div{
     color: white;
-    width: 250px;
+    width: 100%;
+    font-size: 20px;
 }
+#pulledCard b{
+    text-decoration: underline; 
+    color: salmon; 
+    font-size: 25px;
+}
+/*********************/
+/* CARD STYLING END */
+/*******************/

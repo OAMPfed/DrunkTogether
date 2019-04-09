@@ -11,15 +11,51 @@
     <!-- Hey! As you're looking at the code, I am assuming you're into coding. 
     Check out the GitHub repository @ https://github.com/OAMPfed/DrunkTogether -->
 <div class="wrapper">
-    <h1>Let's Get Drunk Together!</h1>
-    <p>This is the DrunkTogether webapp, a social drinking game!</p>
     
-       <button onclick="pullCard()">Pull a card!</button>
     
-    <div id="pulledCard">
-        
+    <!-- HEADER -->
+    <div class="header">
+            <div class="header-logo">
+                <p>Logo</p>
+            </div>
+            <div class="header-links">
+                <a href="#">Github</a>
+                <a href="#">Rules</a>
+            </div>
     </div>
-
+    
+    
+    <!-- LIST OF PEOPLE PLAYING -->
+    <div class="people">
+        <div class="name-input">
+            <input type="text">
+            <button>Add Name</button>
+        </div>
+        <div class="name-list">
+            <ul>
+                <li><p>Placeholder 1</p></li>
+                <li><p>Placeholder 2</p></li>       
+            </ul>
+        </div>
+    </div> 
+    
+    
+    <!-- TEXT -->
+    <div class="drunk-text">
+        <h1>Drunk Together</h1>
+        <p>A social drinking game! Fill in your names and click the card to begin!</p>
+    </div>
+    
+    
+    <!-- BUTTON & CARD --> 
+    <div class="card-area">
+        <div class="pulledCardBorder" style="cursor: pointer;" onclick="pullCard()">
+            <div id="pulledCard">
+            </div>
+        </div>
+    </div>
+    
+    
 </div>    
 </body>
     <script src="scripts/DrunkTogether.js"></script>
