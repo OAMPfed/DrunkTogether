@@ -10,7 +10,7 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 33% 34% 33%;
     grid-template-rows: auto;
     grid-row-gap: 20px;
 }
@@ -38,7 +38,7 @@ body {
 .wrapper h1{
     margin: 0px auto 0px auto;
     color: white;
-    font-size: 70px;
+    font-size: 6‘0px;
 }
 .wrapper p{
     margin: 0px auto 0px auto;
@@ -57,8 +57,8 @@ body {
 /*********************/
 
 .drunk-text{
-    grid-column: 2/4;
-    grid-row: 2;
+    grid-column: 3/4;
+    grid-row: 2/4;
 }
 
 /*********************/
@@ -103,8 +103,8 @@ body {
 /* CARD STYLING START */
 /*********************/
 .card-area{
-    grid-column: 2/4;
-    grid-row: 3;
+    grid-column: 2/3;
+    grid-row: 2/4;
 }
 .pulledCardBorder{
     width: 340px;
@@ -112,9 +112,11 @@ body {
     grid-column: 1/4;
     border-radius: 10px;
     background-color: #2d3436;
+    box-shadow: 0px 0px 28px -7px rgba(0,0,0,0.75);
 }
 #pulledCard{
     display: flex;
+    flex-direction: column;
     grid-column: 1/4;
     border-radius: 10px;
     width: 340px;
@@ -128,13 +130,28 @@ body {
 }
 #pulledCard div{
     color: white;
-    width: 100%;
+    width: 95%;
     font-size: 20px;
+    margin: 0px auto;
+    padding: 15px 0px 0px 0px;
 }
 #pulledCard b{
-    text-decoration: underline; 
     color: salmon; 
     font-size: 25px;
+    width: 95%;
+    margin: 0px auto;
+    padding: 15px 0px 0px 0px;
+}
+#pulledCard p b{
+    padding: 0px 0px 10px 0px;
+    font-size: 30px;
+}
+#pulledCard img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 /*********************/
 /* CARD STYLING END */

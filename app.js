@@ -7,10 +7,6 @@ app.use('/styles', express.static('styles'));
 app.use('/images', express.static('images'));
 
 
-/*app.get('/doge', (request, response) => {
-    response.json(myDog)
-});*/
-
 app.get('/drunkrules', function (request, response) {
     response.sendFile(path.join(__dirname + '/drunkrules.html'))
 });
@@ -18,6 +14,5 @@ app.get('/drunkrules', function (request, response) {
 app.get('/', (request, response) => {
     response.sendFile(path.join(__dirname + '/drunktogether.html'))
 });
-
 
 app.listen(process.env.PORT || 8080);
