@@ -59,6 +59,18 @@ body {
 .drunk-text{
     grid-column: 3/4;
     grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.drunk-text h2{
+    margin: 15px auto 0px auto;
+    color: white;
+}
+.drunk-text ol{
+    margin: 15px auto;
+    color: white;
+    font-size: 20px;
 }
 
 /*********************/
@@ -88,7 +100,10 @@ body {
 .name-list ul{
     width: 408px;
     height: auto;
-    background-color: red;
+}
+.name-list ul li{
+    padding: 5px 0px 0px 0px;
+    margin: 5px 0px 5px 0px;
 }
 .name-list ul li p{
     font-size: 35px;
@@ -137,7 +152,7 @@ body {
 }
 #pulledCard b{
     color: salmon; 
-    font-size: 25px;
+    font-size: 35px;
     width: 95%;
     margin: 0px auto;
     padding: 15px 0px 0px 0px;
